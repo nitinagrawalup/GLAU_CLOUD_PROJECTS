@@ -12,8 +12,7 @@
 <br/>
 <ul>
 	<li>
-		Personal Computer with minimum 4GB RAM and 4 cores with VT Enabled 
-
+		Personal Computer with minimum 4GB RAM and 4 cores with VT Enabled. 
 	</li>
 </ul>
 <strong>Software Requirements:</strong>
