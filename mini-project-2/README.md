@@ -662,7 +662,7 @@ alt="STRESS TOOL" width="240" height="180" border="10" /></a>
 </p>
 <h2>Using Glances to monitor Linux system resources on local system (standalone mode)</h2>
 <p>
-	You can easily launch Glances to monitor your local machine by running this command n the terminal.
+	You can easily launch Glances to monitor your local machine by running this command in the terminal.
 	<br/>
 	<table>
   		<tr>
