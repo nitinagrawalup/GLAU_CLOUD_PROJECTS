@@ -503,6 +503,4 @@
 		</li>
 	</ul>
 </p>
-<a href = "https://youtu.be/RGEhBQd7tq4" target = "_self"> 
-         <img src = "img/stress_video.png" alt = "Stress Tutorial" border = "0"/> 
-</a>
+[![STRESS TUTUORIAL](https://img.youtube.com/vi/RGEhBQd7tq4/0.jpg)](https://www.youtube.com/watch?v=RGEhBQd7tq4)
