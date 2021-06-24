@@ -307,3 +307,219 @@
 		</li>
 	</ul>
 
+<h1>Stress Testing <h1>
+<p>
+	Stress Testing is a type of software testing that verifies stability & reliability of software application. The goal of Stress testing is measuring software on its robustness and error handling capabilities under extremely heavy load conditions and ensuring that software doesn't crash under crunch situations. It even tests beyond normal operating points and evaluates how software works under extreme conditions
+</p>
+<img src ="img/12.png">
+<br/>
+<p>
+	In Software Engineering, Stress Testing is also known as Endurance Testing. Under Stress Testing, AUT is be stressed for a short period of time to know its withstanding capacity. A most prominent use of stress testing is to determine the limit, at which the system or software or hardware breaks. It also checks whether the system demonstrates effective error management under extreme conditions
+</p>
+<p>
+	The application under testing will be stressed when 5GB data is copied from the website and pasted in notepad. Notepad is under stress and gives 'Not Responded' error message.
+</p>
+<img src="img/13.png">
+<p>
+	In this project, we will learn- 
+	<ul>
+		<li>What is Stress Testing?</li>
+		<li>Need for Stress Testing</li>
+		<li>Goals of Stress Testing</li>
+		<li>Load Testing Vs Stress Testing</li>
+		<li>Types of Stress Testing</li>
+		<li>How to do Stress Testing?</li>
+		<li>Tools recommended for Stress Testing</li>
+		<li>Metrics for Stress Testing</li>
+	</ul>
+</p>
+<p>
+	Consider the following scenarios -  
+	<ul>
+		<li>During festival time, an online shopping site may witness a spike in traffic, or when it announces a sale.</li>
+		<li>When a blog is mentioned in a leading newspaper, it experiences a sudden surge in traffic</li>
+	</ul>
+</p>
+<p>
+	It is imperative to perform Stress Testing to accommodate such abnormal traffic spikes. Failure to accommodate this sudden traffic may result in loss of revenue and repute. 
+</p>
+<p>
+	Stress testing is also extremely valuable for the following reasons: 
+	<ul>
+		<li>To check whether the system works under abnormal conditions.</li>
+		<li>Displaying appropriate error message when the system is under stress</li>
+		<li>System failure under extreme conditions could result in enormous revenue loss</li>
+		<li>It is better to be prepared for extreme conditions by executing Stress Testing</li>
+	</ul>
+</p>
+<h2>Goals of Stress Testing</h2>
+<p>
+	The goal of stress testing is to analyze the behavior of the system after a failure. For stress testing to be successful, a system should display an appropriate error message while it is under extreme conditions
+</p>
+<p>
+	To conduct Stress Testing, sometimes, massive data sets may be used which may get lost during Stress Testing. Testers should not lose this security-related data while doing stress testing
+</p>
+<p>
+	The main purpose of stress testing is to make sure that the system recovers after failure which is called as recoverability.
+</p>
+<h2>Load Testing Vs Stress Testing</h2>
+<img src="img/14.png"
+<br/>
+<table>
+  <tr>
+    <th>Load Testing</th>
+    <th>Stress Testing</th>
+  </tr>
+  <tr>
+    <td>Load Testing is to test the system behavior under normal workload conditions, and it is just testing or simulating with the actual workload</td>
+    <td>Stress testing is to test the system behavior under extreme conditions and is carried out till the system failure</td>
+  </tr>
+  <tr>
+    <td>Load testing does not break the system</td>
+    <td>Stress testing tries to break the system by testing with overwhelming data or resources</td>
+  </tr>
+</table>
+<h2>Types of Stress Testing:</h2>
+<p>
+	Following are the types of stress testing and are explained as follows: 
+</p>
+<h3>Distributed Stress Testing</h3>
+<img src="img/15.png">
+<br/>
+<p>
+	In distributed client-server systems, testing is done across all clients from the server. The role of stress server is to distribute a set of stress tests to all stress clients and track on the status of the client. After the client contacts the server, the server adds the name of the client and starts sending data for testing
+</p>
+<p>
+	Meanwhile, client machines send signal or heartbeat that it is connected with the server. If the server does not receive any signals from the client machine, it needs to be investigated further for debugging. From the figure, a server can connect with the 2 clients (Client1 and Client2), but it cannot send or receive a signal from Client 3 & 4.
+</p>
+<p>
+	Night run is the best option to run these stress testing scenarios. Large server farms need a more efficient method for determining which computers have had stress failures that need to be investigated
+</p>
+<h3>Application Stress Testing</h3>
+<p>
+	This testing concentrate on finding defects related to data locking and blocking, network issues and performance bottlenecks in an application
+</p>
+<h3>Transactional Stress Testing</h3>
+<p>
+	It does stress testing on one or more transactions between two or more applications. It is used for fine-tuning & optimizing the system
+</p>
+<h3>Systemic Stress Testing</h3>
+<p>
+	This is integrated stress testing which can be tested across multiple systems running on the same server. It is used to find defects where one application data blocks another application
+</p>
+<h3>Exploratory Stress Testing</h3>
+<p>
+	This is one of the types of stress testing which is used to test the system with unusual parameters or conditions that are unlikely to occur in a real scenario. It is used to find defects in unexpected scenarios like 
+	<ol>
+		<li>
+			A large number of users logged at the same time
+		</li>
+		<li>
+			If a virus scanner started in all machines simultaneously
+		</li>
+		<li>
+			If Database has gone offline when it is accessed from a website
+		</li>
+		<li>
+			When a large volume of data is inserted to the database simultaneously
+		</li>
+
+	</ol>
+</p>
+<h2>How to do Stress Testing?</h2>
+<p>
+	Stress Testing process can be done in 5 major steps: 
+</p>
+<ol>
+	<li>
+		Planning the Stress Test. Here you gather the system data, analyze the system, define the stress test goals	
+	</li>
+	<li>
+		Create Automation Scripts: In this phase, you create the Stress testing automation scripts, generate the test data for the stress scenarios	
+	</li>
+	<li>
+		Script Execution: In this stage, you run the Stress testing automation scripts and store the stress results	
+	</li>
+	<li>
+		Results Analysis: In this stage, you analyze the Stress Test results and identify bottlenecks	
+	</li>
+	<li>
+		Tweaking and Optimization: In this stage, you fine-tune the system, change configurations, optimize the code with goal meet the desired benchmark.	
+	</li>
+</ol>
+<p>
+	Lastly, you again run the entire cycle to determine that the tweaks have produced the desired results. For example, it's not unusual to have to 3 to 4 cycles of the Stress Testing process to achieve the performance goals 
+</p>
+<h2>Tools recommended for Stress Testing</h2>
+<dl>
+	<dt>
+		LoadRunner
+	</dt>
+	<dd>
+		LoadRunner from HP is a widely-used Load Testing tool. Load Test Results shaped by Loadrunner are considered as a benchmark
+	</dd>
+	
+	<dt>
+		Jmeter
+	</dt>
+	<dd>
+		Jmeter is an Open Source testing tool. It is a pure Java application for stress and Performance Testing. Jmeter is intended to cover types of tests like load, functional, stress, etc. It needs JDK 5 or higher to function
+	</dd>
+
+	<dt>
+		Stress Tester 
+	</dt>
+	<dd>
+		This tool provides extensive analysis of the web application performance, provides results in graphical format, and it is extremely easy to use. No high-level scripting is required and gives a good return on investment
+	</dd>
+
+	<dt>
+		Neo load 
+	</dt>
+	<dd>
+		This is a popular tool available in the market to test the web and Mobile applications. This tool can simulate thousands of users in order to evaluate the application performance under load and analyze the response times. It also supports Cloud-integrated - performance, load and stress testing. It is easy to use, cost-effective and provides good scalability. 
+	</dd>
+</dl>
+<h2>Metrics for Stress Testing</h2>
+<p>
+	Metrics help in evaluating a System's performance and generally studied at the end of Stress Test. Commonly used metrics are - 
+<p>
+<p>
+	<strong>Measuring Scalability & Performance </strong>
+	<ul>
+		<li>Pages per Second: Measures how many pages have been requested / Second</li>
+		<li>Throughput: Basic Metric - Response data size/Second</li>
+		<li>Rounds: Number of times test scenarios have been planned Versus Number of times a client has executed</li>
+	</ul>
+</p>
+<p>
+	<strong>Application Response </strong>
+	<ul>
+		<li>
+			Hit time: Average time to retrieve an image or a page
+		</li>
+		<li>
+			Time to the first byte: Time is taken to return the first byte of data or information
+		</li>
+		<li>
+			Page Time: Time is taken to retrieve all the information in a page	
+		</li>
+	</ul>
+</p>
+<p>
+	<strong>Failures </strong>
+	<ul>
+		<li>
+			Failed Connections: Number of failed connections refused by the client (Weak Signal)
+		</li>
+		<li>
+			Failed Rounds: Number of rounds it gets failed
+		</li>
+		<li>
+			Failed Hits: Number of failed attempts done by the system (Broken links or unseen images)
+		</li>
+	</ul>
+</p>
+<a href = "https://youtu.be/RGEhBQd7tq4" target = "_self"> 
+         <img ismap src = "/img/stress_video" alt = "Stress Tutorial" border = "0"/> 
+</a>
