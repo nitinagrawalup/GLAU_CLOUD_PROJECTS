@@ -504,5 +504,5 @@
 	</ul>
 </p>
 <a href = "https://youtu.be/RGEhBQd7tq4" target = "_self"> 
-         <img src = "img/stress_video" alt = "Stress Tutorial" border = "0"/> 
+         <img src = "img/stress_video.png" alt = "Stress Tutorial" border = "0"/> 
 </a>
