@@ -645,24 +645,30 @@ alt="STRESS TOOL" width="240" height="180" border="10" /></a>
 <p>
 	On Debian/Ubuntu based distributions, you can use the following command:
 	<br/>
-	```html
-		sudo apt install glances
-	```
+	<table>
+  		<tr>
+    			<td>sudo apt install glances</td>    
+	 	</tr>
+	</table>
 	<br/>
 	You can also install the latest Glances using snap package:
 	<br/>
-	```html
-		sudo snap install glances 
-	```
+	<table>
+  		<tr>
+    			<td>sudo snap install glances </td>    
+	 	</tr>
+	</table>
 	<br/>
 </p>
 <h2>Using Glances to monitor Linux system resources on local system (standalone mode)</h2>
 <p>
 	You can easily launch Glances to monitor your local machine by running this command n the terminal.
 	<br/>
-	```html
-		glances
-	```
+	<table>
+  		<tr>
+    			<td>glances</td>    
+	 	</tr>
+	</table>
 	<br/>
 	You can instantly observe that it integrates a lot of different information in one single screen. I like that it shows the public and private IP’s of the computer right at the top.
 </p>
@@ -688,9 +694,11 @@ alt="STRESS TOOL" width="240" height="180" border="10" /></a>
 <p>
 	You can export to CSV while monitoring with this command.
 	<br/>
-	```html
-		glances --export csv --export-csv-file /tmp/glances.csv
-	```
+	<table>
+  		<tr>
+    			<td>glances --export csv --export-csv-file /tmp/glances.csv</td>    
+	 	</tr>
+	</table>
 	<br/>
 	‘/tmp/glances.csv’ is the location of the file. The data is filled in neatly as time series.
 </p>
