@@ -29,7 +29,7 @@
 	</li> 
 </ul>
 <hr/>
-# Virtualization 
+<h1>Virtualization</h1>
 <p>
 	Virtualization is technology that allows you to create multiple simulated environments or dedicated resources from a single, physical hardware system. Software called a hypervisor connects directly to that hardware and allows you to split 1 system into separate, distinct, and secure environments known as virtual machines (VMs). These VMs rely on the hypervisor’s ability to separate the machine’s resources from the hardware and distribute them appropriately. Virtualization helps you get the most value from previous investments.
 </p>
@@ -106,3 +106,80 @@
 <p>
 	Network functions virtualization (NFV) separates a network's key functions (like directory services, file sharing, and IP configuration) so they can be distributed among environments. Once software functions are independent of the physical machines they once lived on, specific functions can be packaged together into a new network and assigned to an environment. Virtualizing networks reduces the number of physical components—like switches, routers, servers, cables, and hubs—that are needed to create multiple, independent networks, and it’s particularly popular in the telecommunications industry.
 </p>
+<h1>Hypervisors</h1>
+<p>
+	A hypervisor is a form of virtualization software used in Cloud hosting to divide and allocate the resources on various pieces of hardware. The program which provides partitioning, isolation or abstraction is called virtualization hypervisor. The hypervisor is a hardware virtualization technique that allows multiple guest operating systems (OS) to run on a single host system at the same time. A hypervisor is sometimes also called a virtual machine manager(VMM).
+</p>
+<h2>Types of Hypervisor </h2>
+<img src="img/9.png">
+<h3>TYPE-1 Hypervisor: </h3>
+<br/>
+<p>
+	The hypervisor runs directly on the underlying host system. It is also known as “Native Hypervisor” or “Bare metal hypervisor”. It does not require any base server operating system. It has direct access to hardware resources. Examples of Type 1 hypervisors include VMware ESXi, Citrix XenServer and Microsoft Hyper-V hypervisor
+</p>
+<strong>Pros & Cons of Type-1 Hypervisor:</strong>
+<br/>
+<p>
+	<strong>Pros:</strong>Such kind of hypervisors are very efficient because they have direct access to the physical hardware resources(like Cpu, Memory, Network, Physical storage). This causes the empowerment the security because there is nothing any kind of the third party resource so that attacker couldn’t compromise with anything. 
+</p>
+<p>
+	<strong>Cons:</strong>One problem with Type-1 hypervisor is that they usually need a dedicated separate machine to perform its operation and to instruct different VMs and control the host hardware resources.
+</p>
+<h3>TYPE-2 Hypervisor: </h3>
+<p>
+	A Host operating system runs on the underlying host system. It is also known as ‘Hosted Hypervisor”. Such kind of hypervisors doesn’t run directly over the underlying hardware rather they run as an application in a Host system(physical machine). Basically, software installed on an operating system. Hypervisor asks the operating system to make hardware calls. Example of Type 2 hypervisor includes VMware Player or Parallels Desktop. Hosted hypervisors are often found on endpoints like PCs.  The type-2 hypervisor is are very useful for engineers, security analyst(for checking malware, or malicious source code and newly developed applications).
+</p>
+<strong>Pros & Cons of Type-2 Hypervisor:</strong>
+<p>
+	<strong>Pros: </strong>Such kind of hypervisors allows quick and easy access to a guest Operating System alongside the host machine running. These hypervisors usually come with additional useful features for guest machine. Such tools enhance the coordination between the host machine and guest machine.
+</p>
+<p>
+	<strong>Cons: </strong>Here there is no direct access to the physical hardware resources so the efficiency of these hypervisors lags in performance as compared to the type-1 hypervisors, and potential security risks are also there an attacker can compromise the security weakness if there is access to the host operating system so he can also access the guest operating system.
+</p>
+<h2>Choosing the right hypervisor :</h2>
+<p>
+	<strong>Type 1 hypervisors offer much better performance than Type 2 </strong>ones because there’s no middle layer, making them the logical choice for mission-critical applications and workloads. But that’s not to say that hosted hypervisors don’t have their place – they’re much simpler to set up, so they’re a good bet if, say, you need to deploy a test environment quickly. One of the best ways to determine which hypervisor meets your needs is to compare their performance metrics. These include CPU overhead, amount of maximum host and guest memory, and support for virtual processors. The following factors should be examined before choosing a suitable hypervisor:
+	<ol>
+		<li><strong>Understand your needs:</strong>The company and its applications are the reason for the data centre (and your job). Besides your company’s needs, you (and your co-workers in IT) also have your own needs. Needs for a virtualization hypervisor are: 
+			<ul>
+				<li>Flexibility</li>
+				<li>Scalability</li> 
+				<li>Usability</li> 
+				<li>Availability</li> 
+				<li>Reliability</li> 
+				<li>Efficiency</li> 
+				<li>Reliable support</li> 
+			</ul>
+		</li>
+		<li>
+			<strong>The cost of a hypervisor: </strong>For many buyers, the toughest part of choosing a hypervisor is striking the right balance between cost and functionality. While a number of entry-level solutions are free, or practically free, the prices at the opposite end of the market can be staggering. Licensing frameworks also vary, so it’s important to be aware of exactly what you’re getting for your money. 
+		</li>
+		<li>
+			<strong>Virtual machine performance: </strong>Virtual systems should meet or exceed the performance of their physical counterparts, at least in relation to the applications within each server. Everything beyond meeting this benchmark is profit.
+		</li>
+		<li>
+			<strong>Ecosystem: </strong>It’s tempting to overlook the role of a hypervisor’s ecosystem – that is, the availability of documentation, support, training, third-party developers and consultancies, and so on – in determining whether or not a solution is cost-effective in the long term. 
+		</li>
+		<li>
+			<strong>Test for yourself:</strong>You can gain basic experience from your existing desktop or laptop. You can run both VMware vSphere and Microsoft Hyper-V in either VMware Workstation or VMware Fusion to create a nice virtual learning and testing environment. 
+		</li>
+	
+	</ol>
+<p>
+<h3>HYPERVISOR REFERENCE MODEL :</h3>
+
+<p>There are 3 main modules coordinates in order to emulate the underlying hardware: </p>
+<p>
+	<ol>
+		<li><strong>DISPATCHER: </strong></li>
+		<br/>
+			The dispatcher behaves like the entry point of the monitor and reroutes the instructions of the virtual machine instance to one of the other two modules. 
+		<li><strong>ALLOCATOR</strong></li>
+		<br/>
+			The allocator is responsible for deciding the system resources to be provided to the virtual machine instance.It means whenever virtual machine tries to execute an instruction that results in changing the machine resources associated with the virtual machine, the allocator is invoked by the dispatcher. 
+		<li><strong>INTERPRETER</strong></li>
+		<br/>
+			The interpreter module consists of interpreter routines.These are executed, whenever virtual machine executes a priviliged instruction
+	</ol>
+</p>
+	
