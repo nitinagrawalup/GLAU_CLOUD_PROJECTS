@@ -194,7 +194,8 @@
 <p>
 	VMs allow multiple different operating systems to run simultaneously on a single computer—like a Linux® distro on a MacOS laptop. Each operating system runs in the same way an operating system or application normally would on the host hardware, so the end user experience emulated within the VM is nearly identical to a real-time operating system experience running on a physical machine.
 </p>
-	
+<img src ="img/10.png">
+<br/>	
 <h2>How do VMs work?</h2>
 <p>
 	Virtualization technology allows you to share a system with many virtual environments. The hypervisor manages the hardware and separates the physical resources from the virtual environments. Resources are partitioned as needed from the physical environment to the VMs.
@@ -215,3 +216,38 @@
 <p>
 	Because VMs are isolated, they are a good option for testing new applications or setting up a production environment. You can also run a single purpose VM to support a specific process.
 </p>	
+<h1>Linux</h1>
+<p>
+	Linux® is an open source operating system (OS). An operating system is the software that directly manages a system’s hardware and resources, like CPU, memory, and storage. The OS sits between applications and hardware and makes the connections between all of your software and the physical resources that do the work.
+</p>
+<p>
+	Think about an OS like a car engine. An engine can run on its own, but it becomes a functional car when it’s connected with a transmission, axles, and wheels. Without the engine running properly, the rest of the car won’t work.
+</p>
+<h2>How does Linux work?</h2>
+<p>
+	Linux was designed to be similar to UNIX, but has evolved to run on a wide variety of hardware from phones to supercomputers. Every Linux-based OS involves the Linux kernel—which manages hardware resources—and a set of software packages that make up the rest of the operating system.
+</p>
+<p>
+	The OS includes some common core components, like the GNU tools, among others. These tools give the user a way to manage the resources provided by the kernel, install additional software, configure performance and security settings, and more. All of these tools bundled together make up the functional operating system. Because Linux is an open source OS, combinations of software can vary between Linux distributions.
+</p>
+<h2>What's a command line?</h2>
+<p>
+	The command line is your direct access to a computer. It's where you ask software to perform hardware actions that point-and-click graphical user interfaces (GUIs) simply can't ask. 
+</p>
+<p>
+	Command lines are available on many operating systems—proprietary or open source. But it’s usually associated with Linux, because both command lines and open source software, together, give users unrestricted access to their computer.
+</p>
+<h2>Top 10 Flavor of linux</h2>
+<ol>
+	<li>Fedora</li>
+	<li>Ubuntu</li>
+	<li>CentOS</li>
+	<li>Debian</li>
+	<li>Kali Linux</li>
+	<li>Red Hat Enterprise Linux</li>
+	<li>Arch Linux</li>
+	<li>OpenSUSE</li>
+	<li>Gentoo</li>
+	<li>Linux Mint</li>
+</ol>
+
