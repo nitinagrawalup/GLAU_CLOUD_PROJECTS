@@ -250,4 +250,60 @@
 	<li>Gentoo</li>
 	<li>Linux Mint</li>
 </ol>
+<h1>ISO File</h1>
+<p>
+	ISO stands for International Organization for Standardization but it isn’t what the .iso file extension stands for. The extension was derived out standard patented by the International Organization for Standardization, for filesystems in optical (CD/DVD) disks. The file system standard is under the name ISO 9660, where the former term is used as the extension .iso for CD/DVD disk image files. But, ISO files represented with the .iso extension isn’t mandatory, as ISO files with file extensions such as .img, .udf also exists.
+</p>
+<img src= "img/11.png">
+<br/>
+<p>
+	<strong>ISO files are also referred to as image files</strong> as they use the exact format as a disk and could be mounted on one’s operating system as if it were a discrete disk. An ISO image is an archive file of an optical disc, a type of disk image composed of the data contents from every written sector on an optical disc, including the optical disc file system.
+</p>
+<h3>Characteristics of an ISO Image</h3>
+<p>
+	ISO image format is uncompressed, containerless, and are stored in binary format. They are a sector-by-sector copy of the contents of an optical drive. Upon encountering an ISO image, the system expects the binary data of format specified under ISO 9660 or UDF (Universal Disk Format), optical media file system standard. ISO files like a regular file, aren’t opened, but rather they are mounted (as if they are a volume/device). This behavior is similar to when an operating system recognizes an optical drive. When ISO images are created from optical disks, then ISO files store only the user data from each sector on an optical disc, ignoring the control headers and error correction data, and are therefore slightly smaller than a raw disc image of optical media. The file format isn’t exclusive to CD/DVD drives, as one could create an ISO image file with custom files, where the ISO would act as a Physical Disk Drive when mounted.
+</p>
+<h3>Advantages of ISO</h3>
+<p>
+	<ul>
+		<li>
+			Allows quick access of files contained within, as the file is mounted (as opposed to other similar formats where contents need to be extracted).
+		</li>
+		<li>
+			Gives deception of a virtual drive, and therefore could be used as a backward compatibility option for the application that requires a disk drive
+		</li>
+		<li>
+			Most operating systems provide native support for ISO image files, therefore no utility is required for using this file format
+		</li>
+	</ul>
+</p>
+<h3>Disadvantages of ISO<h3>
+<p>
+	<ul>
+		<li>
+			The files inside an ISO image could be edited, but the whole ISO needs to be recompiled again which is time-consuming (as opposed to other formats such as ZIP, etc)
+		</li>
+		<li>
+			Performance may not be the most optimal, as the file format follows as optical drive structure which isn’t much efficient
+		</li>
+		<li>
+			No significant error resilience or integrity preserving protocols are enforced in the format
+		</li>
+		<li>
+			Small corruption in any sector of the data, leads to unmountable ISO image files (since the file must be mounted in order to access the data inside, it consequently leads to the data becoming unreadable or not accessible)
+		</li>
+	</ul>
+</p>
+<h3>Applications of ISO</h3>
+	<ul>	
+		<li>
+			ISO image files are used in emulating a optical drives in Video Game Console emulators such as RPCS3, PCSX2, Zenia, PPSSPP etc
+		</li>
+		<li>
+			<strong>The format is used extensively for storing copies of Operating systems like Windows, linux, Disk Operating System (DOS) etc.</strong>
+		</li>
+		<li>
+			Used by backup programs to create backup disks
+		</li>
+	</ul>
 
