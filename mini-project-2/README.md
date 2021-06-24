@@ -307,7 +307,7 @@
 		</li>
 	</ul>
 
-<h1>Stress Testing <h1>
+<h1>Stress Testing </h1>
 <p>
 	Stress Testing is a type of software testing that verifies stability & reliability of software application. The goal of Stress testing is measuring software on its robustness and error handling capabilities under extremely heavy load conditions and ensuring that software doesn't crash under crunch situations. It even tests beyond normal operating points and evaluates how software works under extreme conditions
 </p>
@@ -423,7 +423,6 @@
 		<li>
 			When a large volume of data is inserted to the database simultaneously
 		</li>
-
 	</ol>
 </p>
 <h2>How to do Stress Testing?</h2>
@@ -451,35 +450,28 @@
 	Lastly, you again run the entire cycle to determine that the tweaks have produced the desired results. For example, it's not unusual to have to 3 to 4 cycles of the Stress Testing process to achieve the performance goals 
 </p>
 <h2>Tools recommended for Stress Testing</h2>
-<dl>
-	<dt>
-		LoadRunner
-	</dt>
-	<dd>
+<p>
+	<strong>LoadRunner</strong><br/>
+
 		LoadRunner from HP is a widely-used Load Testing tool. Load Test Results shaped by Loadrunner are considered as a benchmark
-	</dd>
+</p>
+<p>
+	<strong>Jmeter</strong><br/>
 	
-	<dt>
-		Jmeter
-	</dt>
-	<dd>
 		Jmeter is an Open Source testing tool. It is a pure Java application for stress and Performance Testing. Jmeter is intended to cover types of tests like load, functional, stress, etc. It needs JDK 5 or higher to function
-	</dd>
-
-	<dt>
-		Stress Tester 
-	</dt>
-	<dd>
+</p>	
+<p>
+	<strong>Stress Tester</strong><br/>
+	
 		This tool provides extensive analysis of the web application performance, provides results in graphical format, and it is extremely easy to use. No high-level scripting is required and gives a good return on investment
-	</dd>
-
-	<dt>
+</p>
+<p>
+	<strong>
 		Neo load 
-	</dt>
-	<dd>
+	</strong>
 		This is a popular tool available in the market to test the web and Mobile applications. This tool can simulate thousands of users in order to evaluate the application performance under load and analyze the response times. It also supports Cloud-integrated - performance, load and stress testing. It is easy to use, cost-effective and provides good scalability. 
-	</dd>
-</dl>
+</p>
+
 <h2>Metrics for Stress Testing</h2>
 <p>
 	Metrics help in evaluating a System's performance and generally studied at the end of Stress Test. Commonly used metrics are - 
@@ -521,5 +513,5 @@
 	</ul>
 </p>
 <a href = "https://youtu.be/RGEhBQd7tq4" target = "_self"> 
-         <img ismap src = "/img/stress_video" alt = "Stress Tutorial" border = "0"/> 
+         <img ismap src = "img/stress_video" alt = "Stress Tutorial" border = "0"/> 
 </a>
