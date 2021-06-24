@@ -503,4 +503,5 @@
 		</li>
 	</ul>
 </p>
-[![STRESS TUTUORIAL](https://img.youtube.com/vi/RGEhBQd7tq4/0.jpg)](https://www.youtube.com/watch?v=RGEhBQd7tq4)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=RGEhBQd7tq4" target="_blank"><img src="http://img.youtube.com/vi/RGEhBQd7tq4/0.jpg" 
+alt="STRESS TOOL" width="240" height="180" border="10" /></a>
