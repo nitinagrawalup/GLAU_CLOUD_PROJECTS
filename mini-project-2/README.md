@@ -451,25 +451,16 @@
 </p>
 <h2>Tools recommended for Stress Testing</h2>
 <p>
-	<strong>LoadRunner</strong><br/>
-
-		LoadRunner from HP is a widely-used Load Testing tool. Load Test Results shaped by Loadrunner are considered as a benchmark
+	<strong>LoadRunner</strong>LoadRunner from HP is a widely-used Load Testing tool. Load Test Results shaped by Loadrunner are considered as a benchmark
 </p>
 <p>
-	<strong>Jmeter</strong><br/>
-	
-		Jmeter is an Open Source testing tool. It is a pure Java application for stress and Performance Testing. Jmeter is intended to cover types of tests like load, functional, stress, etc. It needs JDK 5 or higher to function
+	<strong>Jmeter</strong>Jmeter is an Open Source testing tool. It is a pure Java application for stress and Performance Testing. Jmeter is intended to cover types of tests like load, functional, stress, etc. It needs JDK 5 or higher to function
 </p>	
 <p>
-	<strong>Stress Tester</strong><br/>
-	
-		This tool provides extensive analysis of the web application performance, provides results in graphical format, and it is extremely easy to use. No high-level scripting is required and gives a good return on investment
+	<strong>Stress Tester</strong>This tool provides extensive analysis of the web application performance, provides results in graphical format, and it is extremely easy to use. No high-level scripting is required and gives a good return on investment
 </p>
 <p>
-	<strong>
-		Neo load 
-	</strong>
-		This is a popular tool available in the market to test the web and Mobile applications. This tool can simulate thousands of users in order to evaluate the application performance under load and analyze the response times. It also supports Cloud-integrated - performance, load and stress testing. It is easy to use, cost-effective and provides good scalability. 
+	<strong>Neo load</strong>This is a popular tool available in the market to test the web and Mobile applications. This tool can simulate thousands of users in order to evaluate the application performance under load and analyze the response times. It also supports Cloud-integrated - performance, load and stress testing. It is easy to use, cost-effective and provides good scalability. 
 </p>
 
 <h2>Metrics for Stress Testing</h2>
@@ -513,5 +504,5 @@
 	</ul>
 </p>
 <a href = "https://youtu.be/RGEhBQd7tq4" target = "_self"> 
-         <img ismap src = "img/stress_video" alt = "Stress Tutorial" border = "0"/> 
+         <img src = "img/stress_video" alt = "Stress Tutorial" border = "0"/> 
 </a>
