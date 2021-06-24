@@ -505,3 +505,213 @@
 </p>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=RGEhBQd7tq4" target="_blank"><img src="http://img.youtube.com/vi/RGEhBQd7tq4/0.jpg" 
 alt="STRESS TOOL" width="240" height="180" border="10" /></a>
+
+<br/>
+<h1>Monitoring Linux server</h1>
+<p>
+	If you're a Linux administrator, you know that information is valuable. Without the ability to quickly gain insight into data center servers, troubleshooting becomes exponentially more difficult. Because of that, you need that information at a glance. But when your Linux servers are sans a desktop environment, how do you get the information you need?
+</p>
+<p>
+	There are many tools available that provide various bits of information. For many admins, the first tool to use is the top command. But for some, top misses out on some crucial information. What if there is a terminal app that can provide you with more information than top? That tool does exist, and it's called Glances.
+</p>
+<h2>GLANCES</h2>
+<p>
+	Glances is a cross-platform monitoring tool which aims to present a maximum of information in a minimum of space through a curses or Web based interface. It can adapt dynamically the displayed information depending on the terminal size.
+</p>
+<p>
+	Glances is a text-based monitor that provides information about:
+	<ul>
+		<li>CPU
+		<li>Memory</li>
+		<li>Load</li>
+		<li>Process list</li>
+		<li>Network interface</li>
+		<li>Disk I/O</li>
+		<li>IRQ / Raid</li>
+		<li>Sensors</li>
+		<li>Filesystem (and folders)</li>
+		<li>Docker</li>
+		<li>Monitor</li>
+		<li>Alert</li>
+		<li>System info</li>
+		<li>Uptime</li>
+		<li>Quicklook (CPU, MEM, LOAD)</li>
+	</ul>
+</p>
+<p>
+	Glances is a free tool and licensed under GPL to monitory GNU/Linux and FreeBSD operating systems. There are lots of interesting options available in Glances as well. One of the main features we have seen in Glances is that we can set thresholds (careful, warning and critical) in configuration file and informations will be shown in colors which indicates the bottleneck in the system
+</p>
+<p>
+	Stats can also be exported to external time/value databases
+</p>
+<p>
+	It can also work in client/server mode. Remote monitoring could be done via terminal, Web interface or API (XMLRPC and RESTful).
+</p>
+<p>
+	Glances is written in Python and uses the psutil library to get information from your system
+</p>
+<h3>Glances Color Codes</h3>
+<p>Meaning of Glances color code:
+	<ol>
+		<li>GREEN: OK (everything is fine)</li>
+		<li>BLUE: CAREFUL (need attention)</li>
+		<li>VIOLET: WARNING (alert)</li>
+		<li>RED: CRITICAL (critical)</li>
+	</ol>
+</p>
+<p>
+	We can set thresholds in configuration file. By default thresholds set is (careful=50, warning=70 and critical=90), we can customized as per our needs. The default configuration file is located at ‘/etc/glances/glances.conf’.
+</p>
+<h3>Glances Options</h3>
+<p>
+	Besides, several command line options, glances provides many more hot keys to find output information while glances is running. Below are the list of several hot keys.
+
+<ol>
+	<li>
+		a – Sort processes automatically
+	</li>
+	<li>
+		c – Sort processes by CPU%
+	</li>
+	<li>
+		m – Sort processes by MEM%
+	</li>
+	<li>
+		p – Sort processes by name
+	</li>
+	<li>
+		i – Sort processes by I/O rate
+	</li>
+	<li>
+		d – Show/hide disk I/O stats ols	
+	</li>
+	<li>
+		f – Show/hide file system statshddtemp	
+	</li>
+	<li>
+		n – Show/hide network stats
+	</li>
+	<li>
+		s – Show/hide sensors stats	
+	</li>
+	<li>
+		y – Show/hide hddtemp stats
+	</li>
+	<li>
+		l – Show/hide logs
+	</li>
+	<li>
+		b – Bytes or bits for network I/Oools
+	</li>
+	<li>
+		w – Delete warning logs	
+	</li>
+	<li>
+		x – Delete warning and critical logs
+	</li>
+	<li>
+		1 – Global CPU or per-CPU stats
+	</li>
+	<li>
+		h – Show/hide this help screen
+	</li>
+	<li>
+		t – View network I/O as combination
+	</li>
+	<li>
+		u – View cumulative network I/O
+	</li>
+	<li>
+		q – Quit (Esc and Ctrl-C also work)
+	</li>
+</ol>
+</p>
+<h2>Features of Glances</h2>
+<p>
+	Let’s have a quick glance over the main feature Glances provides (pun intended). 
+	<ul>
+		<li>Can monitor 15+ metrics on a system (including docker containers).</li>
+		<li>Flexible usage modes: standalone, client-server, over SSH and web mode.</li>
+		<li>Versatile REST API and XML-RPC available for integrations.</li>
+		<li>Readily supports exporting data to different services and databases.</li>
+		<li>Highly configurable and adaptable to different needs.</li>
+		<li>Very comprehensive Documentation.</li>
+	</ul>
+</p>
+<h2>Installing Glances on Ubuntu and other Linux distributions</h2>
+<p>
+	Glances is available in the official repositories of many Linux distributions. This means you can use your distribution’s package manager to install it easily.
+</p>
+<p>
+	On Debian/Ubuntu based distributions, you can use the following command:
+	<br/>
+	```html
+		sudo apt install glances
+	```
+	<br/>
+	You can also install the latest Glances using snap package:
+	<br/>
+	```html
+		sudo snap install glances 
+	```
+	<br/>
+</p>
+<h2>Using Glances to monitor Linux system resources on local system (standalone mode)</h2>
+<p>
+	You can easily launch Glances to monitor your local machine by running this command n the terminal.
+	<br/>
+	```html
+		glances
+	```
+	<br/>
+	You can instantly observe that it integrates a lot of different information in one single screen. I like that it shows the public and private IP’s of the computer right at the top.
+</p>
+<br/>
+<img src="img/16.png">
+<br/>
+<p>
+	Glances is also interactive, meaning you can use commands to interact with it while it is running. You can press “s” to bring up the sensors onto the screen; “k” to bring up the TCP connections list; “1” to expand the CPU stats to show individual threads.
+</p>
+<p>
+	You can also use the arrow keys to move around the list of processes and sort the table by different metrics. 
+</p>
+<p>
+	You can launch Glances with various command line options. There are plenty more interactive commands as well. 
+</p>
+<p>
+	Press Ctrl+C to exit Glances.
+</p>
+<h2>Export Glances data to different services</h2>
+<p>
+	One of the biggest advantage of using Glances is the out of the box support to export data to various databases, services and integration into various data pipelines seamlessly.
+</p>
+<p>
+	You can export to CSV while monitoring with this command.
+	<br/>
+	```html
+		glances --export csv --export-csv-file /tmp/glances.csv
+	```
+	<br/>
+	‘/tmp/glances.csv’ is the location of the file. The data is filled in neatly as time series.
+</p>
+<br/>
+<img src="img/17.png">
+<br/>
+<h2>Top 7 System Monitoring Tools</h2>
+<ol>
+	<li>htop</li>
+	<li>atop</li>
+	<li>nmon</li>
+	<li>vtop</li>
+	<li>bashtop</li>
+	<li>gtop</li>
+	<li>glances</li>
+</ol>
+<br/>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=yWIrlVSfVCI" target="_blank"><img src="http://img.youtube.com/vi/6a5XLU9Ex4c/0.jpg" 
+alt="STRESS TOOL" width="240" height="180" border="10" /></a>
+<br/>
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=E3Ioopzt8ko" target="_blank"><img src="http://img.youtube.com/vi/E3Ioopzt8ko/0.jpg" 
+alt="STRESS TOOL" width="240" height="180" border="10" /></a>
+<br/>
