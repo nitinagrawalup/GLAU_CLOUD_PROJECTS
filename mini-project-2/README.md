@@ -920,3 +920,110 @@ alt="STRESS TOOL" width="240" height="180" border="10" /></a>
 
 <img src="img/84.PNG"/>
 <br/>
+<h1>Fedora ISO file mounted on VMware</h1>
+<br/>
+<img src="img/85.PNG"/>
+
+<img src="img/86.png"/>
+<br/>
+
+<img src="img/87.PNG"/>
+<br/>
+
+<img src="img/88.PNG"/>
+<br/>
+
+<img src="img/89.PNG"/>
+<br/>
+
+<img src="img/90.PNG"/>
+<br/>
+
+<img src="img/91.PNG"/>
+<br/>
+
+<img src="img/92.PNG"/>
+<br/>
+
+<img src="img/93.PNG"/>
+<br/>
+
+<img src="img/94.png"/>
+<br/>
+
+<img src="img/95.PNG"/>
+<br/>
+
+<img src="img/96.PNG"/>
+<br/>
+
+<img src="img/97.PNG"/>
+<br/>
+
+<img src="img/98.PNG"/>
+<br/>
+
+<img src="img/99.PNG"/>
+<br/>
+
+<img src="img/100.PNG"/>
+<br/>
+
+<img src="img/101.PNG"/>
+<br/>
+
+<img src="img/102.PNG"/>
+<br/>
+
+<img src="img/103.PNG"/>
+<br/>
+<h2>Stress & Glance Tool</h2>
+<br/>
+<img src="img/104.PNG"/>
+<br/>
+
+<img src="img/105.PNG"/>
+<br/>
+
+<img src="img/106.PNG"/>
+<br/>
+
+<img src="img/107.PNG"/>
+<br/>
+
+<img src="img/108.PNG"/>
+<br/>
+
+<img src="img/109.PNG"/>
+<br/>
+
+<img src="img/110.PNG"/>
+<br/>
+
+<img src="img/111.PNG"/>
+<br/>
+
+<img src="img/112.PNG"/>
+<br/>
+
+<img src="img/113.PNG"/>
+<br/>
+
+<img src="img/114.PNG"/>
+<br/>
+
+<img src="img/115.PNG"/>
+<br/>
+
+<img src="img/116.PNG"/>
+<br/>
+
+<img src="img/117.PNG"/>
+<br/>
+
+<img src="img/118.PNG"/>
+<br/>
+
+<img src="img/119.PNG"/>
+<br/>
+
